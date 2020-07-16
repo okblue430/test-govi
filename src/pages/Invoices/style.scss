@@ -1,0 +1,53 @@
+.invoice-container{
+    width: 100%;
+    margin-top: 100px;
+    flex: 1;
+}
+.action-area{
+    margin-bottom: 10px;
+    label{
+        padding: 5px;
+        font-size: 20px;
+    }
+}
+.invoice-data{
+    margin: 30px auto;
+    width: 70%;
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 1px solid white;
+        padding: 5px;
+        font-size: 15px;
+        .order_amount {flex: 2;}
+        .order_currency {flex: 1;}
+        .order_date {flex: 3;}
+        .order_due {flex: 3;}
+        .order_paid {flex: 1;}
+        .order_paid_date {flex: 3;}
+        .date {
+            font-size: 13px;
+        }
+    }
+}
+
+// pagination
+.pagination-container{
+    display: flex;
+    float: right;
+    margin-top: 5px;
+    .page-btn {
+        width: 60px;
+        font-size: 22px;
+        border: 1px solid #fff;
+        margin-left: 10px;
+        cursor: not-allowed;
+        &.active {
+            cursor: pointer;
+            background-color: white;
+            color: #000;
+        }
+    }
+}
